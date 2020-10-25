@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".NewCalendarActivity">
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark your Date"
+        android:textColor="@color/smoke"
+        android:textSize="26sp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        />
+    
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@color/smoke">
+        
+        <CalendarView
+            android:id="@+id/newCalendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="340dp">
+
+        </CalendarView>
+
+        
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@color/smoke"
+        android:text="Save Date"
+        android:padding="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp">
+
+    </Button>
+
+
+
+</LinearLayout>
